@@ -1,7 +1,12 @@
 // import One from "./questions/One"
 // import Two from "./questions/Two"
 
-import Eight from "./questions/Eight"
+import Eleven from "./questions/Eleven"
+
+// import Ten from "./questions/Ten"
+
+// import Eight from "./questions/Eight"
+// import Nine from "./questions/Nine"
 
 // import Seven from "./questions/Seven"
 
@@ -22,7 +27,10 @@ const App = () => {
       {/* <Five /> */}
       {/* <Six /> */}
       {/* <Seven /> */}
-      <Eight />
+      {/* <Eight /> */}
+      {/* <Nine /> */}
+      {/* <Ten /> */}
+      <Eleven/>
     </div>
   )
 }
