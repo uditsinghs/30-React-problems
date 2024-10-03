@@ -1,7 +1,15 @@
 // import One from "./questions/One"
 // import Two from "./questions/Two"
+// import Fifteen from "./questions/Fifteen"
+// import Fourteen from "./questions/Fourteen"
 
-import Eleven from "./questions/Eleven"
+// import Sixteen from "./questions/Sixteen"
+
+// import Thirteen from "./questions/Thirteen"
+
+// import Twelve from "./questions/Twelve"
+
+// import Eleven from "./questions/Eleven"
 
 // import Ten from "./questions/Ten"
 
@@ -16,12 +24,18 @@ import Eleven from "./questions/Eleven"
 
 // import Four from "./questions/Four"
 
-// import Three from "./questions/Three"
+// // import Three from "./questions/Three"
+import { useThemeContext } from "./context/ThemeContext"
+import Eighteen from "./questions/Eighteen"
+// import Seventeen from "./questions/Seventeen"
 const App = () => {
+  const { isDarkMode } = useThemeContext()
+  const toggleTheme = isDarkMode ? "bg-zinc-800 text-white" : "bg-white text-black"
+  // const items = ['item1', 'item2', 'item3', 'another item', "another item2"]
   return (
-    <div className="w-full h-screen flex justify-center items-center bg-zinc-800 text-white text-2xl">
+    <div className={`w-full h-screen ${toggleTheme}`}>
       {/* <One /> */}
-      {/* <Two /> */}
+      {/* <Two />
       {/* <Three /> */}
       {/* <Four /> */}
       {/* <Five /> */}
@@ -30,7 +44,14 @@ const App = () => {
       {/* <Eight /> */}
       {/* <Nine /> */}
       {/* <Ten /> */}
-      <Eleven/>
+      {/* <Eleven/> */}
+      {/* <Twelve items={items}/> */}
+      {/* <Thirteen items={items} itemsPerPage={2}/> */}
+      {/* <Fourteen /> */}
+      {/* <Fifteen /> */}
+      {/* <Sixteen /> */}
+      {/* <Seventeen /> */}
+      <Eighteen />
     </div>
   )
 }

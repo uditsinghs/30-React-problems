@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.menu-items {
+
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-items.hidden {
+  display: none;
+}
+
+.menu-items.block {
+  display: block;
+}

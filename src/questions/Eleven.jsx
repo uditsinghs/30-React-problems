@@ -11,7 +11,7 @@ const Eleven = () => {
       fetch(`https://api.weatherapi.com/v1/current.json?key=27fa04acd7f6449db1e21233240210&q=${place}&aqi=no`)
         .then((response) => {
           if (!response.ok) {
-            throw new Error('Network response was not ok');
+            throw new Error('No such city data exist  ');
           }
           return response.json();
         })
@@ -48,7 +48,7 @@ const Eleven = () => {
           <p>Temp in Celsius: {weather.current.temp_c}°C</p>
         </div>
       ) : (
-        <p>Enter a city </p>
+        <p className="mt-4">Press Enter to Search City Weather</p>
       )}
     </div>
   );
